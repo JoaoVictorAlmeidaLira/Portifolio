@@ -412,3 +412,104 @@ header {
     opacity: 1;
     visibility: visible;
 }
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #636363;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 35rem;
+    display: flex;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left {
+    width: 35%;
+    background: 
+        linear-gradient(rgba(15,15,15, 0.1), rgba(22,22,22, 0.9)),
+        url(imagens/img-left.jpg);
+    background-size: cover;
+}
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 3rem 2.5rem 10rem;
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #272727;
+    font-size: 3.5rem;
+    font-weight: lighter;
+} 
+
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1.5px dashed #232323;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea {
+    margin-top: 1.5rem;
+    max-width: 20rem;
+    max-height: 3;
+}
+
+.field-label {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.field:focus ~ label {
+    top:0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn {
+    background: #800080;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    width: 68%;
+    height: 2rem;
+}
